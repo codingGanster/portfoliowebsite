@@ -1,0 +1,180 @@
+*{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+letter-spacing: 2px;
+    word-spacing: 2px;
+    color: #fff;
+    box-sizing: border-box;
+    animation: mycollege 7s;
+    font-size: 20px;
+}
+
+
+body{
+background-color:  rgb(20,0,69);
+  
+}
+
+.btn5{
+    float: right;
+}
+.btn6{
+    margin-top: 100px;
+}
+
+/* crads styles*/
+
+.card1{
+   
+    border-left: 2px solid red;
+    border-bottom: 2px solid blue;
+  }
+
+.card2{
+    border-left: 2px solid red;
+    border-bottom: 2px solid blue;
+}
+
+.card3{
+    border-left: 2px solid red;
+    border-bottom: 2px solid blue;
+}
+
+#skills{
+    display: none;
+  
+    
+}
+#exprience{
+    display: none;
+}
+#work{
+    display: none;
+}
+
+/* SPECIAL SECTION STYLES*/
+#hover-cards{
+    width: auto;
+    height: auto;
+    padding: 5px;
+   margin-top: 30px;
+}
+.cover{
+    display: inline-flex;
+   padding: 5px;
+}
+
+
+
+
+.img-section img{
+    padding: 20px;
+    height: 200px;
+    width: 100px;
+    border: solid  rgb(20,0,69);
+    border-radius: 65%;
+    transition: all 3s;
+    
+    
+
+    animation: scale 3s linear 2;
+    animation-delay: 5s;
+}
+
+button{
+    border: 1px solid;
+    font-size: 25px;
+    border-radius: 25px;
+    background: linear-gradient(to left,blue,red) ;
+    color: #fff;
+    margin-left: 2px;
+    text-transform: capitalize;
+}
+button:hover{
+    font-size: 20px;
+    transition: all;
+}
+
+#self{
+    margin-left: 50px;
+}
+em{
+    color: #00f;
+}
+span{
+    color: turquoise;
+}
+a{
+    color: #00f;
+    text-decoration: none;
+}
+a:hover{border: 1px solid red;
+    outline-style: double;
+}
+
+/* ALL LIST STYLES */
+ol li{
+    list-style-image: initial;
+    
+}
+
+ul li{
+    list-style-type: square;
+}
+
+/*  LAST PORTION STYLES*/
+
+
+
+
+/*  ANIMATION STYLES*/
+@keyframes cola{
+    50%{border-color: green;}
+    100%{border-color: yellow;}}
+
+
+@keyframes scale{
+    50%{
+        transform: scale(0.1);
+    }
+}
+
+
+@keyframes mycollege{
+    0%{scale: 0.3;
+    opacity: 0;}
+    100%{ scale: 1;
+        opacity: 1;}
+}
+
+@keyframes color{
+    0%{background-color: purple;}
+    50%{background-color:red; border-radius: 50px;}
+    70%{background-color: yellow; width: 200px;}
+    100%{background-color: blue;}
+}
+
+/* MEDIA QUERIES SECTION */
+
+@media(min-width:455px){
+    .cover{
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media(max-width:454px){
+    .cover{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #phone{
+        visibility: visible;
+        color: #f00;
+    }
+    #pc{
+        visibility: hidden;
+        color: #f00;
+    }
+}

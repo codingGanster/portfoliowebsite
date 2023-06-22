@@ -1,0 +1,46 @@
+body{
+    text-align: center;
+    background-color: rgba(100,0,60);
+    
+}
+
+
+h1{
+    color: rgba(250,0,200);
+}
+
+h2{
+    text-transform: capitalize;
+    color: rgba(250,0,200);
+
+}
+
+.login-part{color: #fff;
+    font-size: 20px;
+}
+
+#line{ border-width: 5px;
+    border-color: #00f;
+border-radius:5px;
+   
+}
+
+.input-field{
+    border: solid;
+    border-radius: 4px 8px;
+    background-color: #660066;
+    color: #fff;
+    margin-bottom: 10px;
+    padding: 5px;
+}
+
+#login{
+    background-color: #00f;
+    color: #fff;
+    border-radius: 8px;
+}
+
+#login:hover{
+    font-size: 30px;
+    transition: all 2s;
+}

@@ -1,0 +1,223 @@
+*{
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  word-spacing: 2px;
+  color: #fff;
+  animation: scal 7s linear;
+}
+
+h1,h2{
+ color: yellow;
+}
+
+/* styles for my services */
+
+
+span{
+  color: #666006;
+  text-transform: uppercase;
+}
+
+.web:hover,.apps:hover,.design:hover{
+  border: solid #666006;
+  border-radius:  5px;
+}
+
+
+
+
+body{
+    background: rgb(20,40,60);
+  
+  }
+  .input-field{
+    border: solid #666006;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #000;
+    height: 50px;
+    width: 300px;
+  }
+  textarea{
+    border: 4px solid #666006;
+    border-radius: 5px;
+    color: #fff;
+    background-color: #00f;
+  }
+
+
+label{
+    text-transform: capitalize;
+    color: #fff;
+}
+#form-cover{
+    animation: scale 7s linear;
+  
+   
+}
+#services button{
+  background-color: #00f;
+  border: solid #00f;
+  border-radius:  5px;
+  color: #fff;
+}
+#services button:hover{
+  background-color: #666006;
+  border: solid #666006;
+  border-radius:  5px;
+  color: #fff;
+}
+
+button{
+    background-color: #00f;
+    border: solid #00f;
+    border-radius:  5px;
+    color: #fff;
+    margin-bottom: 50px;
+   }
+
+   button:hover{
+    font-size: 20px;
+    background-color: #000;
+    transition: all 2s;
+    border: solid #000;
+    border-radius:  5px;
+    color: #fff;
+   }
+   #submit, #reset{
+    background-color: #00f;
+    border: solid #00f;
+    border-radius:  5px;
+    color: #fff;
+   }
+
+   #submit:hover, #reset:hover{
+    font-size: 18px;
+    transition: all 2s;
+
+   }
+   span{
+    font-size: 20px;
+   }
+   .place{
+    display: inline;
+   }
+
+  
+   
+
+
+
+   /* ANIMATION SECTION */
+   @keyframes scale{
+    0%{
+        scale: 0;
+        opacity: 0;
+    }
+
+    100%{
+        scale: 1;
+        opacity: 1;
+    }
+   }
+   /* media styles */
+   @media(min-width:541px){
+    #services{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+    text-align: center;
+    }
+
+    
+    
+.web{
+ 
+  border:  solid #00f;
+  width: 300px;
+  height: 200px;
+  background-color: #000;
+  color: #fff;
+  border-radius:  5px;
+ 
+}
+
+.apps{
+  border:  solid #00f;
+  width: 300px;
+  height: 200px;
+  background-color: #000;
+  color: #fff;
+  border-radius:  5px;
+}
+
+.design{
+  border:  solid #00f;
+  width: 300px;
+  height: 200px;
+  background-color: #000;
+  color: #fff;
+  border-radius:  5px;
+}
+
+
+
+   }
+
+   @media(max-width:540px){
+   
+    #services{
+      display: flex;
+      flex-direction: column;
+    text-align: center;
+    }
+
+    
+.web{
+ 
+  border:  solid #00f;
+  width: 300px;
+  height: 150px;
+  background-color: #000;
+  color: #fff;
+  border-radius:  5px;
+  margin-bottom: 25px;
+ 
+}
+
+.apps{
+  border:  solid #00f;
+  width: 300px;
+  height: 150px;
+  background-color: #000;
+  color: #fff;
+  border-radius:  5px;
+  margin-bottom: 25px;
+}
+
+.design{
+  border:  solid #00f;
+  width: 300px;
+  height: 150px;
+  background-color: #000;
+  color: #fff;
+  border-radius:  5px;
+  margin-bottom: 25px;
+}
+
+.input-field{
+  border: solid #666006;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #000;
+  height: 50px;
+  width: 250px;
+}
+textarea{
+  border: 4px solid #666006;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #00f;
+}
+}

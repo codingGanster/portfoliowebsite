@@ -1,0 +1,223 @@
+*{
+   letter-spacing: 2px;
+   word-spacing: 3px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.progress{
+    background-color: white;
+    width: 1px;
+    height: 20px;
+    border: solid;
+    border-radius: 50%;
+    background-color: #000;
+    animation: colorslide 3s infinite;
+   }
+
+
+   @keyframes colorslide{
+    0%{
+        background-color: #000;
+        width: 5%;
+
+    }
+    
+    10%{
+        background-color: yellow;
+        width: 50%;
+
+    }
+    20%{
+        background-color: yellow;
+        width: 70%;
+
+    }
+    30%{
+        background-color: red;
+        width: 100%;
+    }
+}
+
+/* large screens style */
+@media(min-width:450px){
+
+
+  .gender{
+    color: #fff;
+  } 
+  p{
+    color: #fff;
+  }
+#pc{ visibility: visible;
+    color: #fff;
+}
+#phone{
+    visibility: hidden;
+}
+h1{
+    color: #fff;
+    text-transform: capitalize;
+    text-align: center;
+}
+body{
+    background: linear-gradient(to left,#000090,#000);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+
+}
+
+.input-aera{
+    border: solid #000;
+    background-color: #000;
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 25px;
+}
+
+.labels{
+    display: none;
+}
+
+.btns{
+   text-align: center;
+  
+   
+  padding-bottom: 20px;
+    
+}
+
+span{
+    font-size: 25px;
+}
+
+select{
+    border: solid #000;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+textarea{
+    color: #fff;
+    border: solid #000;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+input[type=submit],input[type=reset]{
+    border:1px  solid yellow;
+    border-radius: 8px;
+    border-color: yellow;
+    background: linear-gradient(to left,red,blue);
+    color: #fff;
+}
+
+input[type=submit]:hover{ font-size: 20px;
+    background-color: #00f;
+
+}
+
+input[type=reset]:hover{
+    font-size: 20px;
+    background-color: #00f;
+}
+
+
+}
+
+/* styles for small screens  */
+@media(max-width:454px){
+    .gender{
+        color: #fff;
+      } 
+        
+      p{
+        color: #fff;
+      }
+    #pc{ visibility: hidden;
+        color: #fff;
+    }
+    #phone{
+        visibility: visible;
+    }
+
+body{
+    background: linear-gradient(to left,#00f,#000);
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.input-aera{
+    border: solid #000;
+    background-color: #000;
+    height: 20px;
+    width: 200px;
+    border-radius: 5px;
+    color: #fff;
+    padding: 25px;
+}
+
+.labels{
+    display: none;
+}
+
+.btns{
+  
+   padding-left: 10px;
+   padding-bottom: 20px;
+
+    
+}
+
+span{
+    font-size: 25px;
+}
+
+select{
+    border: solid #000;
+    color: #fff;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+textarea{
+    color: #fff;
+    border: solid #000;
+    border-radius: 5px;
+    background-color: #000;
+}
+
+input[type=submit],input[type=reset]{
+    border: 1px solid yellow;
+    border-radius: 8px;
+    border-color: yellow;
+    background: linear-gradient(to left,red,blue);
+    color: #fff;
+}
+
+input[type=submit]:hover{ font-size: 20px;
+    background-color: #00f;
+
+}
+
+input[type=reset]:hover{
+    font-size: 20px;
+    background-color: #00f;
+}
+
+}

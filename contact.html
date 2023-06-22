@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>send me your details</title>
+</head>
+<body>
+    <main>
+<h1>This is what i do as part of my services</h1>
+ <section id="services">
+
+    <div class="web">
+        <span>Web development</span>
+        <p>you can even see that because this whole website was coded by me</p>
+        <button type="button" onclick="this.innerHTML='You clicked me'">Click me</button>
+    </div>
+
+
+    <div class="design">
+        <span>UI/UX design</span>
+        <p>i do alot of user interface and user exprience designs and more</p>
+        <button type="button" onclick="this.innerHTML='Nothing to show'" >see more</button>
+    </div>
+
+
+    
+    <div class="apps">
+        <span>Apps and others</span>
+    <p>i will make your App look good and professional on all devices</p>
+    <button type="button" onclick="this.innerHTML='Ok later'">see more</button>
+</div>
+ </section>
+  
+
+<section id="form">
+    <h2>Please contact me by filling the form below for your work</h2>
+
+    <div id="form-cover">
+
+    <form action="infor.php" target="_blank" method="post" name="contact-form" onsubmit="document.write('Information sent,thank you')">
+       
+        <label for="fname">Name:</label>
+        <br>
+        <input type="text" name="full name" id="fname" placeholder="enter your name" pattern="[A-Za-z0-9\]" title="Only letters and numbers" required class="input-field" autofocus>
+        <br><br>
+
+        <label for="email">Email:</label>
+        <br>
+        <input type="email" name="email" id="email" placeholder="example@gmail.com" pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9._+-]+\.[a-z]{2,}" required title="invalid email" class="input-field">
+        <br><br>
+
+        <label for="phone">Mobile:</label>
+        <br>
+        <input type="tel" name="mobile" id="phone" placeholder="your number e.g 0542197822" pattern="[0-9]{10}" title="Must be 10 digits" required class="input-field">
+        <br><br>
+
+        <label for="gender">Gender(select one)</label>
+        <br>
+        <input type="radio" name="gender" id="male" value="male"><span> &#128104;</span>Male
+        <input type="radio" name="gender" id="female" value="female"><span>&#129493;</span>female
+        <br><br>
+
+        <textarea name="your project" id="project" cols="20" rows="3" placeholder="enter your request here" required></textarea>
+        <br><br>
+
+      
+        <div class="place">
+        <input type="submit" value="submit" id="submit">
+        <input type="reset" value="clear data" id="reset"> 
+    </div>
+    </div>
+ </form>
+</section>
+</main>
+
+</body>
+</html>

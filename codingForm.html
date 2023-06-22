@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>We code everyday for life</title>
+    <link rel="stylesheet" href="codingForm.css">
+</head>
+<body>
+    <div class="progress"></div>
+    <p id="phone">Welcome, you are using a phone or a small screen device to fill now</p>
+    <p id="pc">Welcome, you are using a big screen device or laptop to fill now</p>
+  
+    <main>
+
+<div class="one">
+   <form action="action.code" method="post" name="form1" target="_blank" onsubmit="return selectLan()">
+        <label for="fname" class="labels">Full name</label>
+        <br>
+        <input type="text" name="fname"  placeholder="enter your name here" pattern="[A-Za-z0-9\]" class="input-aera" required autofocus>
+        <br>
+        <label for="email" class="labels">Email</label>
+        <br>
+        <input type="email" name="email"  placeholder="enter email here"  pattern="[A-Za-z0-9._+-]+@[A-Za-z0-9._+-]+\.[a-z]{2,}" required title="invalid email" class="input-aera">
+        <br>
+        <label for="mobile" class="labels">mobile</label>
+        <br>
+        <input type="tel" name="mobile" id="mobile" placeholder=" enter mobile number" pattern="[0-9]{10}" title="Must be 10 digits" class="input-aera" required>
+        <br>
+        <div class="gender">
+        <label for="gender"> Your Gender:</label>
+        <br>
+        <input type="radio" id="male" name="gender" value="male"><span>&#128104;</span>Male
+        <input type="radio" id="female" name="gender" value="female"><span>&#129493;</span>Female
+    </div>
+
+        <div id="two">
+        <p>Select what you want to learn in my school</p>
+        <select name="languages" id="languages" multiple>
+            <optgroup label="Web development">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="XML">XML</option>
+                <option value="PHP">PHP</option>
+                <option value="JavaScript">JavaScript</option>
+                <option value="all">All languages</option>
+            </optgroup>
+
+            <optgroup label="software/programming">
+                <option value="python">Python</option>
+                <option value="Java">Java</option>
+                <option value="C++">C++</option>
+                <option value="C">C</option>
+                <option value="Rubby">Rubby</option>
+                <option value="VB">VB</option>
+                <option value="C#">C#</option>
+                <option value="all">All languages</option>
+</optgroup>
+        </select>
+        <br><br>
+        <textarea name="other infor" id="other-infor" cols="25" rows="5" placeholder="enter other request here" required></textarea>
+    <br><br>
+   
+</div>
+</main>
+<div class="btns">
+    <input type="submit" value="Submit">
+    <input type="reset" value="Clear">
+</div>
+    </form>
+    
+
+    <script>
+       function selectLan(){
+        const a = document.forms['form1']
+        ['languages'].value;
+        if( a === null || a ===""){
+            alert('please you didn\'t select a language to learn');
+            return false;
+        }
+       }
+    </script>
+</body>
+</html>
